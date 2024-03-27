@@ -1,0 +1,11 @@
+import { DetailedHTMLProps, HTMLAttributes, ReactNode } from "react";
+
+
+interface ITagProps extends DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement> {
+  size?: 'm' | 'l';
+  children: ReactNode;
+  color?: 'ghost' | 'red' | 'gray' | 'green' | 'primary';
+  href?: string;
+}
+
+export default ITagProps;
