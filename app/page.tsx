@@ -1,10 +1,12 @@
-import { FC } from "react";
-import { HTag, Button, Paragraph, Tag } from "@/components";
+"use client";
+
+import { FC, useState } from "react";
+import { HTag, Button, Paragraph, Tag, Rating } from "@/components";
 import Image from "next/image";
 import styles from "./page.module.css";
 
 const Home: FC = () => {
-  const a: number = 1;
+  const [rating, setrating] = useState<number>(4);
 
   return (
     <>
@@ -28,6 +30,7 @@ const Home: FC = () => {
         hh.ru
       </Tag>
       <Tag color="primary">Работа в Photoshop</Tag>
+      <Rating rating={rating} setRating={setrating} isEditable />
     </>
   );
 };

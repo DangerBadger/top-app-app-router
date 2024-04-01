@@ -1,0 +1,24 @@
+.filled svg {
+  fill: var(--primary);
+}
+
+.star svg {
+  box-sizing: content-box;
+  margin-right: 5px;
+}
+
+.star svg:focus {
+  outline: none;
+}
+
+.star svg:focus-visible {
+  outline: 2px auto;
+}
+
+.last svg {
+  margin-right: 0;
+}
+
+.editable {
+  cursor: pointer;
+}
